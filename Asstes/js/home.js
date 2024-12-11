@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const openPopupBtn = document.getElementById("open-popup");
     const buttonImage = openPopupBtn.querySelector("img");
 
-    // Open WhatsApp Popup
+
     openPopupBtn.addEventListener("click", (event) => {
         event.stopPropagation();
         const isPopupVisible = !whatsappPopup.classList.contains("d-none");
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Close WhatsApp Popup when clicking outside
+
     window.addEventListener("click", (event) => {
         if (!whatsappPopup.contains(event.target) && event.target !== openPopupBtn) {
             whatsappPopup.classList.add("d-none");
@@ -27,8 +27,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Prevent clicks inside the popup from closing it
     whatsappPopup.addEventListener("click", (event) => {
         event.stopPropagation();
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const heroCarousel = new bootstrap.Carousel(document.querySelector("#heroCarousel"), {
+        interval: 5000,
+        ride: "carousel",
+    });
+
+    const logoCarousel = new bootstrap.Carousel(document.querySelector("#logoCarousel"), {
+        interval: 3000,
+        ride: "carousel",
     });
 });

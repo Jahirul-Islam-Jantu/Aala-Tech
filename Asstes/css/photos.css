@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navUl li a{
+    margin-right: 20px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    font-style:italic;
+    color: #f1f3f5; !important;
+}
+#navUl li a:hover{
+    color: #bcdeeb; !important;
+}
+
+
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.whatsapp-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 90%;
+    max-width: 320px;
+    transition: all 0.3s ease;
+}
+.number {
+    border-left: 3px solid lawngreen !important;
+}
+
+.bg-color{
+    background-color: #2db743;
+
+}
+.font-h{
+    color: #d9f1dd;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+}
+.font-p{
+    color: #d9ebc6;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+.text-color{
+    color:#a5abb7;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 21px;
+}
+
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

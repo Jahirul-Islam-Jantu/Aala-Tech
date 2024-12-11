@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif, Helvetica, sans-serif;
 
@@ -15,6 +19,56 @@ body {
     background: rgba(26, 29, 32, 0.65);
     width: 100%;
 
+}
+.navButton1{
+    background: #043567;
+    padding: 10px 40px;
+    color: #fff;
+    transition: 0.3s;
+    border: none;
+    margin-right: 2rem;
+    font-weight: 400;
+    font-family: Open Sans;
+    font-size: 16px;
+}
+.navButton1:hover{
+    background: #4181ca;
+    transition: 0.3s;
+    box-shadow: 1px 1px 1px 1px #4181ca;
+}
+.navButton2{
+    background: #043567;
+    padding: 10px 40px;
+    color: #fff;
+    transition: 0.3s;
+    border: none;
+    margin-right: 2rem;
+    font-weight: 400;
+    font-family: Open Sans;
+    font-size: 16px;
+}
+.navButton2:hover{
+    background: #4181ca;
+    transition: 0.3s;
+    box-shadow: 1px 1px 1px 1px #4181ca;
+}
+#navUl li a{
+    margin-right: 20px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    font-style:italic;
+    color: #f1f3f5; !important;
+}
+#navUl li a:hover{
+    color: #bcdeeb; !important;
+}
+.phone img{
+    width: 16px;
+}
+.phone a:hover{
+    color: #bbddea !important;
 }
 
 .navbar-nav {
@@ -36,32 +90,35 @@ body {
     background: #1a1d20 no-repeat center;
 }
 
+/* General Carousel Styles */
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    opacity: 90%;
+}
+
 .carousel-caption {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 5px;
 }
-.carousel-item img {
-    object-fit:cover;
-    width: 100%;
-    height: 80vh;
-    opacity: 90%;
 
-
+/* Hero Carousel Specific Styles */
+#heroCarousel .carousel-item img {
+    height: 80vh; /* Full-screen height for hero */
 }
 
-.carousel-head{
-    font-size: 50px;
-    line-height: 60px;
+#heroCarousel .carousel-head {
+    font-size: 2.5rem;
+    line-height: 3rem;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif , Roboto, sans-serif;
     color: rgba(255, 255, 255, 0.8);
 }
-.carousel-p{
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 400;
-    font-family: "Roboto Thin",'Montserrat', sans-serif , Roboto, sans-serif;
+
+#heroCarousel .carousel-p {
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #428bee;
 }
 .whatsapp-btn {
@@ -117,6 +174,33 @@ body {
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+#logoCarousel .carousel-item img {
+    width: auto;
+    max-width: 150px; /* Constrain logo size */
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    #heroCarousel .carousel-head {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    #heroCarousel .carousel-p {
+        font-size: 0.875rem;
+    }
+
+    #logoCarousel .carousel-item img {
+        max-width: 120px;
+    }
+}
+
+
+
 .footer {
     padding: 50px 0;
 }
@@ -146,6 +230,8 @@ body {
     width: 100%;
     max-width: 200px;
 }
+
+
 
 
 

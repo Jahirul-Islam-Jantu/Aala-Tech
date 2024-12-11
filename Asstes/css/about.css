@@ -1,3 +1,21 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navUl li a{
+    margin-right: 20px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    font-style:italic;
+    color: #f1f3f5; !important;
+}
+#navUl li a:hover{
+    color: #bcdeeb; !important;
+}
 .background {
     background: url('/Asstes/img/construction.jpg') no-repeat center center ;
     background-size: cover;

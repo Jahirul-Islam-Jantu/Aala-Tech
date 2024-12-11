@@ -13,24 +13,20 @@
 </head>
 <body>
 <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark  opacity-100  position-absolute d-block z-index ">
+    <nav class="navbar navbar-expand-lg navbar-dark mb-5 opacity-100  position-absolute d-block z-index ">
         <div class="" >
             <div class="mb-3 border-bottom d-flex justify-content-around align-items-center">
                 <div class="brand">
                     <a class="navbar-brand d-flex align-items-center" href="../index.html">
                         <img src="../Asstes/img/logo.jpg" class="logo-img me-2" alt="Logo">
-                        <strong>
-                            <span class="text-success">Al-Ama</span>
-                            <span class="text-primary">Limited</span>
-                        </strong>
                     </a>
                 </div>
                 <div class="phone">
-                    <span class="text-light d-none d-lg-block">Phone: +966581234567</span>
+                    <a href="tel:+966581234567" class="text-light text-decoration-none"><img src="../Asstes/img/phone.svg" alt="">+966581234567</a>
                 </div>
                 <div class="d-flex mt-3 mt-lg-0">
-                    <a href="#" class="btn btn-outline-success me-2">Button1</a>
-                    <a href="#" class="btn btn-outline-info">Button2</a>
+                    <button href="#" class="navButton1">Button1</button>
+                    <button href="#" class="navButton2">Button2</button>
                 </div>
 
             </div>
@@ -39,16 +35,64 @@
             </button>
 
             <div class="collapse navbar-collapse border-bottom mb-3" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Pages/about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Pages/photos.html">Photo Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Pages/service.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Pages/contact.html">Contact</a></li>
+                <ul class="navbar-nav ms-auto " id="navUl">
+                    <li class="nav-item"><a class="nav-link " href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="../Pages/about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link " href="../Pages/photos.html">Photo Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link " href="../Pages/service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link " href="../Pages/contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- WhatsApp Button and Popup -->
+    <div id="whatsapp-container">
+        <div class="whatsapp-popup d-none" id="whatsapp-popup">
+            <div class="card w-100 ">
+                <div class="card-header bg-color p-3">
+                    <strong class="font-h">Start a Conversation</strong>
+                    <p class="mb-1 font-p">Hi! Click one of our members below to chat on <strong>WhatsApp</strong>.</p>
+                </div>
+                <div class="card-body">
+                    <p class="text-muted small">The team typically replies in a few minutes.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="https://wa.me/966581234567" target="_blank" class="d-flex align-items-center text-decoration-none border p-2 rounded">
+                                <img src="../Asstes/img/whatsapp.png" alt="WhatsApp Icon" width="30" class="me-2">
+                                <span class=" text-color">Aala Tech Company</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn whatsapp-btn " id="open-popup">
+            <img src="../Asstes/img/whatsapp.png" alt="WhatsApp" width="50px">
+        </button>
+    </div>
 </div>
+
+<script src="../Asstes/js/home.js" defer></script>
 </body>
 </html>
