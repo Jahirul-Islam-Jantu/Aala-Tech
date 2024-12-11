@@ -32,14 +32,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const heroCarousel = new bootstrap.Carousel(document.querySelector("#heroCarousel"), {
-        interval: 5000,
-        ride: "carousel",
-    });
-
-    const logoCarousel = new bootstrap.Carousel(document.querySelector("#logoCarousel"), {
-        interval: 3000,
-        ride: "carousel",
+$(document).ready(function () {
+    $('.logo-area').slick({
+        centerMode: true,
+        centerPadding: '80px',
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows:false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2,
+                    autoplay: true,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '20px',
+                    slidesToShow: 1,
+                    autoplay: true,
+                }
+            }
+        ]
     });
 });

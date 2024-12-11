@@ -8,6 +8,7 @@
     <title>Al-Ama Limited</title>
     <link rel="stylesheet" href="./Asstes/css/bootstrap.min.css">
     <link rel="stylesheet" href="./Asstes/css/home.css">
+    <link rel="stylesheet" type="text/css" href="./Asstes/css/slick.css"/>
     <link rel="icon" type="image/jpeg" href="./Asstes/img/logo.jpg">
 
 </head>
@@ -128,7 +129,7 @@
         <div class="col-md-12 mb-3">
             <div class="d-flex justify-content-center align-items-center">
                 <div class="col-md-6">
-                    <img src="./Asstes/img/construction.jpg" width="5760" height="300" class="card-img-top rounded-3" alt="Service 1">
+                    <img src="./Asstes/img/construction.jpg"  class="card-img-top rounded-3" alt="Service 1">
                 </div>
                     <div class="card-body col-md-6 mx-5 ">
                         <h5 class="card-title text-dark-emphasis fw-bolder">Construction Section</h5>
@@ -140,7 +141,7 @@
         <div class="col-md-12 mb-3">
             <div class="d-flex justify-content-center align-items-center">
                 <div class="col-md-6">
-                    <img src="./Asstes/img/electrical.jpg" width="5760" height="300" class="card-img-top rounded-3" alt="Service 2">
+                    <img src="./Asstes/img/electrical.jpg"  class="card-img-top rounded-3" alt="Service 2">
                 </div>
                 <div class="card-body col-md-6 mx-5">
                     <h5 class="card-title text-dark-emphasis fw-bolder">Electrical Section</h5>
@@ -157,7 +158,7 @@
                     <a href="./Pages/service.html" class="btn btn-primary">Learn More</a>
                 </div>
                 <div class="col-md-6 ">
-                    <img src="./Asstes/img/mechanical.jpg"  width="5760" height="300" class="card-img-top rounded-3" alt="Service 3">
+                    <img src="./Asstes/img/mechanical.jpg"   class="card-img-top rounded-3" alt="Service 3">
                 </div>
             </div>
         </div>
@@ -169,7 +170,7 @@
                     <a href="./Pages/service.html" class="btn btn-primary">Learn More</a>
                 </div>
                 <div class="col-md-6 ">
-                    <img src="./Asstes/img/manpower.jpg"  width="5760" height="300" class="card-img-top rounded-3" alt="Service 3">
+                    <img src="./Asstes/img/manpower.jpg"   class="card-img-top rounded-3" alt="Service 3">
                 </div>
             </div>
         </div>
@@ -179,48 +180,20 @@
 <!-- Our Clients Slider -->
 <div  class="container my-5">
     <h2 class="text-center mb-4">Our Partners</h2>
-    <div id="logoCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <!-- Individual Slides -->
-            <div class="carousel-item active">
-                <img src="./Asstes/img/cooper.jpg" alt="Logo 1" class="d-block">
-            </div>
-            <div class="carousel-item">
-                <img src="./Asstes/img/exor.webp" alt="Logo 2" class="d-block">
-            </div>
-            <div class="carousel-item">
-                <img src="./Asstes/img/hanwa.webp" alt="Logo 3" class="d-block">
-            </div>
-            <div class="carousel-item">
-                <img src="./Asstes/img/hikvision.webp" alt="Logo 4" class="d-block">
-            </div>
-            <div class="carousel-item">
-                <img src="./Asstes/img/honeywell.jpg" alt="Logo 5" class="d-block">
-            </div>
-            <div class="carousel-item">
-                <img src="./Asstes/img/hochiki.webp" alt="Logo 6" class="d-block">
-            </div>
-            <div class="carousel-item">
-                <img src="./Asstes/img/inncom.webp" alt="Logo 7" class="d-block">
-            </div>
-            <div class="carousel-item">
-                <img src="./Asstes/img/netix.webp" alt="Logo 8" class="d-block">
-            </div>
-            <div class="carousel-item">
-                <img src="./Asstes/img/trend.webp" alt="Logo 9" class="d-block">
-            </div>
-        </div>
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#logoCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#logoCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    <div class="logo-area">
+        <div><img src="./Asstes/img/cooper.jpg" alt="Logo 1"></div>
+        <div><img src="./Asstes/img/exor.webp" alt="Logo 2"></div>
+        <div><img src="./Asstes/img/hanwa.webp" alt="Logo 3"></div>
+        <div><img src="./Asstes/img/hikvision.webp" alt="Logo 4"></div>
+        <div><img src="./Asstes/img/honeywell.jpg" alt="Logo 5"></div>
+        <div><img src="./Asstes/img/hochiki.webp" alt="Logo 6"></div>
+        <div><img src="./Asstes/img/inncom.webp" alt="Logo 7"></div>
+        <div><img src="./Asstes/img/netix.webp" alt="Logo 8"></div>
+        <div><img src="./Asstes/img/trend.webp" alt="Logo 9"></div>
     </div>
 </div>
+
+
 
 <!-- WhatsApp Button and Popup -->
 <div id="whatsapp-container">
@@ -322,14 +295,13 @@
     </div>
 </footer>
 
-<script src="./Asstes/js/bootstrap.bundle.min.js" defer></script>
-<script src="./Asstes/js/home.js" defer></script>
-<script>
-    const carousel = new bootstrap.Carousel('#logoCarousel', {
-        interval: 5000, // 5 seconds
-        ride: 'carousel'
-    });
-</script>
+
+
+<script src="./Asstes/js/jquery.min.js" ></script>
+<script src="./Asstes/js/slick.min.js" > </script>
+<script src="./Asstes/js/bootstrap.bundle.min.js" ></script>
+<script src="./Asstes/js/home.js" ></script>
+
 
 </body>
 </html>

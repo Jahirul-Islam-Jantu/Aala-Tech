@@ -169,20 +169,26 @@ body {
     line-height: 21px;
 }
 
+.logo-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.logo-area div {
+    padding: 10px;
+}
+.logo-area img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#logoCarousel .carousel-item img {
-    width: auto;
-    max-width: 150px; /* Constrain logo size */
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 @media (max-width: 768px) {
     #heroCarousel .carousel-head {
