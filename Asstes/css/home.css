@@ -1,5 +1,219 @@
-.logo-img{
-    width: 5rem;
-    height: 5rem;
+
+body {
+    font-family: Arial, sans-serif, Helvetica, sans-serif;
+
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
+.z-index{
+    z-index: 1000;
+    position: relative;
+    background: rgba(26, 29, 32, 0.65);
+    width: 100%;
+
+}
+
+.navbar-nav {
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-link {
+    text-align: center;
+}
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+
+.bg{
+
+    background-size: cover;
+    background: #1a1d20 no-repeat center;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+.carousel-item img {
+    object-fit:cover;
+    width: 100%;
+    height: 80vh;
+    opacity: 90%;
+
+
+}
+
+.carousel-head{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif , Roboto, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+}
+.carousel-p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "Roboto Thin",'Montserrat', sans-serif , Roboto, sans-serif;
+    color: #428bee;
+}
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.whatsapp-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 90%;
+    max-width: 320px;
+    transition: all 0.3s ease;
+}
+.number {
+    border-left: 3px solid lawngreen !important;
+}
+
+.bg-color{
+    background-color: #2db743;
+
+}
+.font-h{
+    color: #d9f1dd;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+}
+.font-p{
+    color: #d9ebc6;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+.text-color{
+    color:#a5abb7;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 21px;
+}
+
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.footer {
+    padding: 50px 0;
+}
+.footer h5 {
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+.footer p {
+    color: #b0b0b0;
+}
+.footer a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #ffffff;
+}
+.footer .social-icons a {
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+.footer .map img {
+    width: 100%;
+    max-width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+/* General Responsive Adjustments */
+@media (max-width: 992px) {
+    .carousel-caption {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .car-head {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .car-p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .navbar-nav {
+        flex-direction: column; /* Stack navbar items */
+    }
+    .logo-img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .navbar {
+        padding: 10px;
+    }
+}
+
+/* Adjust WhatsApp Popup */
+@media (max-width: 768px) {
+    .whatsapp-popup {
+        bottom: 10px;
+        right: 10px;
+        width: 95%;
+    }
+
+    .whatsapp-btn img {
+        width: 40px;
+    }
+    .logo-img {
+        width: 40px;
+        height: 40px; /* Smaller logo on mobile */
+    }
+
+    .navbar-nav {
+        text-align: center; /* Center align menu items */
+    }
+}
+
+/* Smaller Devices (Mobile) */
+@media (max-width: 576px) {
+    .carousel-caption h1,
+    .carousel-caption p {
+        font-size: 12px; /* Reduce text size */
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    .navbar-brand strong {
+        font-size: 14px; /* Smaller logo text */
+    }
+}
+

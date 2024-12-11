@@ -1,0 +1,69 @@
+.background {
+    background: url('/Asstes/img/construction.jpg') no-repeat center center ;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f0f3bd;
+}
+.bg-color-opacity{
+    background: rgba(218, 165, 32, 0.51);
+    border: 2px solid rgba(218, 165, 32, 0.51);
+
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.whatsapp-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 90%;
+    max-width: 320px;
+    transition: all 0.3s ease;
+}
+.number {
+    border-left: 3px solid lawngreen !important;
+}
+
+.bg-color{
+    background-color: #2db743;
+
+}
+.font-h{
+    color: #d9f1dd;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+}
+.font-p{
+    color: #d9ebc6;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+.text-color{
+    color:#a5abb7;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 21px;
+}
+
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
