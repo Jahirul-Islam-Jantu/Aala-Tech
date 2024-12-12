@@ -5,9 +5,7 @@
 }
 body {
     font-family: Open Sans;
-
 }
-
 .logo-img {
     width: 50px;
     height: 50px;
@@ -18,7 +16,6 @@ body {
     position: relative;
     background: rgba(26, 29, 32, 0.65);
     width: 100%;
-
 }
 .navButton1{
     background: #043567;
@@ -91,7 +88,9 @@ body {
     background: #4181ca;
     transition: 0.3s;
     box-shadow:  1px 1px 1px #4181ca;
-
+}
+.about img{
+    box-shadow:  3px 10px 10px #2e3440;
 }
 .service-btn{
     background: #043567;
@@ -106,7 +105,6 @@ body {
 .service-btn:hover{
     background: #4181ca;
     transition: 0.3s;
-
 }
 .service-header{
     font-family: open Sans;
@@ -139,6 +137,17 @@ body {
     font-size: 16px;
     line-height: 30px;
 }
+.service-card img{
+    transition: 0.3s;
+}
+.service-card{
+    overflow: hidden;
+}
+.service-card img:hover{
+    transform: scale(105%);
+    transition: 0.3s;
+
+}
 .partner{
     font-family: open Sans;
     font-weight: 700;
@@ -164,7 +173,6 @@ body {
     background: #4181ca;
     transition: 0.3s;
 }
-
 #navUl li a{
     margin-right: 20px;
     font-family: Roboto;
@@ -183,12 +191,10 @@ body {
 .phone a:hover{
     color: #bbddea !important;
 }
-
 .navbar-nav {
     justify-content: center;
     width: 100%;
 }
-
 .nav-link {
     text-align: center;
 }
@@ -196,32 +202,24 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
 }
-
 .bg{
-
     background-size: cover;
     background: #1a1d20 no-repeat center;
 }
-
-/* General Carousel Styles */
 .carousel-item img {
     object-fit: cover;
     width: 100%;
     height: auto;
     opacity: 90%;
 }
-
 .carousel-caption {
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 5px;
 }
-
-/* Hero Carousel Specific Styles */
 #heroCarousel .carousel-item img {
-    height: 80vh; /* Full-screen height for hero */
+    height: 80vh;
 }
-
 #heroCarousel .carousel-head {
     font-family: Roboto;
     font-weight: 700;
@@ -230,7 +228,6 @@ body {
     color: #ffffff;
 
 }
-
 #heroCarousel .carousel-p {
     font-family: Roboto;
     font-weight: 400;
@@ -241,7 +238,21 @@ body {
 }
 .gallery-bg{
     background: #1a1d20 no-repeat center;
-
+    transition: 0.3s;
+}
+.gallery-bg:hover{
+    box-shadow: -1px 2px 10px #428bee;
+    transition: 0.3s;
+}
+.gallery-bg img{
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.gallery-bg img:hover{
+    transform: scale(105%);
+    box-shadow: -1px 2px 10px #428bee;
+    transition: 0.3s;
+    border-radius: 5px;
 }
 .gallery-head{
     font-family: Roboto;
@@ -250,7 +261,6 @@ body {
     line-height: 60px;
     color: #000000;
 }
-
 .galary-title{
     font-family: "Open Sans";
     font-weight: 700;
@@ -265,7 +275,13 @@ body {
     line-height: 21px;
     color: #bcdeeb;
 }
-
+.photos-p{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #747b86;
+}
 .whatsapp-btn {
     position: fixed;
     bottom: 20px;
@@ -276,7 +292,6 @@ body {
     outline: none;
     cursor: pointer;
 }
-
 .whatsapp-popup {
     position: fixed;
     bottom: 20px;
@@ -289,17 +304,14 @@ body {
 .number {
     border-left: 3px solid lawngreen !important;
 }
-
 .bg-color{
     background-color: #2db743;
-
 }
 .font-h{
     color: #d9f1dd;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-
 }
 .font-p{
     color: #d9ebc6;
@@ -313,7 +325,6 @@ body {
     font-size: 11px;
     line-height: 21px;
 }
-
 .logo-area {
     display: flex;
     justify-content: center;
@@ -327,12 +338,39 @@ body {
     max-width: 100%;
     height: auto;
 }
-
-
-
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.footer {
+    padding: 50px 0;
+}
+.footer h5 {
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+.footer p {
+    color: #b0b0b0;
+}
+.footer a {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #ffffff;
+}
+.footer .social-icons a {
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 1.5rem;
+}
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+.footer .map img {
+    width: 100%;
+    max-width: 200px;
+}
+
 .footer-h5{
     font-family: Lato !important;
     font-weight: 800 !important;
@@ -356,14 +394,14 @@ body {
     font-size: 16px !important;
     line-height: 30px !important;
     color: #bcdeeb !important;
-    transition: 0.3s;
+    transition: all .2s ease-in-out;
+    display: inline-block;
 }
 
 .footer-anc a:hover {
     color: #e1f0fa !important;
-    transition: 0.3s;
+    transform: scale(102%);
 }
-
 .subscribe{
     border: 1px solid transparent;
     background: #4181ca no-repeat center;
@@ -398,13 +436,9 @@ body {
     color: #ffffff;
     padding: 10px 20px;
     transition: 0.3s;
+    transform: scale(105%);
 
 }
-
-
-
-
-
 @media (max-width: 768px) {
     #heroCarousel .carousel-head {
         font-size: 2rem;
@@ -418,52 +452,24 @@ body {
     #logoCarousel .carousel-item img {
         max-width: 120px;
     }
+    .whatsapp-popup {
+        bottom: 10px;
+        right: 10px;
+        width: 95%;
+    }
+
+    .whatsapp-btn img {
+        width: 40px;
+    }
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
 }
-
-
-
-.footer {
-    padding: 50px 0;
-}
-.footer h5 {
-    color: #ffffff;
-    font-size: 1.25rem;
-}
-.footer p {
-    color: #b0b0b0;
-}
-.footer a {
-    color: #b0b0b0;
-    text-decoration: none;
-}
-.footer a:hover {
-    color: #ffffff;
-}
-.footer .social-icons a {
-    color: #ffffff;
-    margin-right: 15px;
-    font-size: 1.5rem;
-}
-.footer .social-icons a:hover {
-    color: #007bff;
-}
-.footer .map img {
-    width: 100%;
-    max-width: 200px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* General Responsive Adjustments */
 @media (max-width: 992px) {
     .carousel-caption {
         font-size: 14px;
@@ -478,7 +484,7 @@ body {
         line-height: 24px;
     }
     .navbar-nav {
-        flex-direction: column; /* Stack navbar items */
+        flex-direction: column;
     }
     .logo-img {
         width: 3rem;
@@ -489,38 +495,15 @@ body {
     }
 }
 
-/* Adjust WhatsApp Popup */
-@media (max-width: 768px) {
-    .whatsapp-popup {
-        bottom: 10px;
-        right: 10px;
-        width: 95%;
-    }
-
-    .whatsapp-btn img {
-        width: 40px;
-    }
-    .logo-img {
-        width: 40px;
-        height: 40px; /* Smaller logo on mobile */
-    }
-
-    .navbar-nav {
-        text-align: center; /* Center align menu items */
-    }
-}
-
-/* Smaller Devices (Mobile) */
 @media (max-width: 576px) {
     .carousel-caption h1,
     .carousel-caption p {
-        font-size: 12px; /* Reduce text size */
+        font-size: 12px;
     }
     .card {
         margin-bottom: 20px;
     }
     .navbar-brand strong {
-        font-size: 14px; /* Smaller logo text */
+        font-size: 14px;
     }
 }
-

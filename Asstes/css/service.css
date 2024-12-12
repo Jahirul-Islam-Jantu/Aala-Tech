@@ -37,6 +37,9 @@
     background: rgba(26, 29, 32, 0.65);
     background-blend-mode: darken;
 }
+.mBottom{
+    margin-bottom: 10rem;
+}
 .whatsapp-btn {
     position: fixed;
     bottom: 20px;

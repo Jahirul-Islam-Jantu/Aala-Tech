@@ -17,7 +17,7 @@
     color: #bcdeeb; !important;
 }
 .background {
-    background: url('/Asstes/img/construction.jpg') no-repeat center center ;
+    background: url('/Asstes/img/contactUs.jpg') no-repeat center center ;
     background-size: cover;
     height: 80vh;
     display: flex;
@@ -83,4 +83,45 @@
 
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.mBot{
+    margin-bottom: 10rem;
+}
+.addressH1{
+    color:#043567;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 35px;
+    font-family: Roboto;
+}
+.footer-h51{
+    font-family: Lato !important;
+    font-weight: 600 !important;
+    font-size: 22px !important;
+    line-height: 22px !important;
+    color: #4181ca !important;
+}
+.footer-anc1 a{
+    font-family: Roboto !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 30px !important;
+    color: #5f6267 !important;
+    transition: all .2s ease-in-out;
+    display: inline-block;
+}
+
+.footer-p1{
+    font-family: Roboto !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 30px !important;
+    color: #5f6267 !important;
+}
+
+
+
+.footer-anc a:hover {
+    color: #e1f0fa !important;
+    transform: scale(102%);
 }

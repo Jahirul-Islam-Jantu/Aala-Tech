@@ -17,7 +17,7 @@
     color: #bcdeeb; !important;
 }
 .background {
-    background: url('/Asstes/img/construction.jpg') no-repeat center center ;
+    background: url('/Asstes/img/aboutus.jpg') no-repeat center center ;
     background-size: cover;
     height: 80vh;
     display: flex;
@@ -31,6 +31,88 @@
     border: 2px solid rgba(218, 165, 32, 0.51);
 
 }
+
+.quality-h1{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #043567;
+}
+.quality-h2{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 67px;
+    color: #4181ca;
+}
+.quality-h3{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #4181ca;
+    margin-bottom: 3rem;
+}
+.quality-p{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #7a7a7a;
+}
+.quality-p1{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #7a7a7a;
+
+}
+.shadowSystem{
+    border-bottom: 1px solid #7a7a7a;
+    border-left: 1px solid #7a7a7a;
+    box-shadow: 20px -20px 30px rgba(116, 123, 134, 0.75);
+    padding: 5rem;
+}
+
+.what-we-do {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #043567;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #7a7a7a;
+}
+
+.marTop {
+    margin-top: 40px;
+}
+.marBottom{
+    margin-bottom: 10rem;
+}
+
+
 
 .whatsapp-btn {
     position: fixed;

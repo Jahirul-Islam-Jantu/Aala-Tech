@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 #navUl li a{
     margin-right: 20px;
     font-family: Roboto;
@@ -15,7 +17,21 @@
 #navUl li a:hover{
     color: #bcdeeb; !important;
 }
+.mBottom{
+    margin-bottom: 10rem;
+}
 
+.background {
+    background: url('/Asstes/img/photos.jpg') no-repeat center center ;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f0f3bd;
+    margin-bottom: 5rem;
+}
 
 
 .whatsapp-btn {
