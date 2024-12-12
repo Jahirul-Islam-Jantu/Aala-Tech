@@ -1,8 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;;
 }
 #navUl li a{
     margin-right: 20px;
@@ -167,3 +170,177 @@
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+@media only screen and (max-width: 576px) {
+
+    #navUl li {
+        text-align: center;
+        width: 100%;
+    }
+
+    #navUl li a {
+        font-size: 16px;
+        padding: 10px;
+        display: block;
+        color: #f1f3f5 !important;
+    }
+
+    .about-header .background {
+        height: 60vh;
+        background-size: cover;
+    }
+
+    .quality-h1, .quality-h2, .quality-h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .quality-p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .quality-h3 {
+        margin-bottom: 2rem;
+    }
+
+    .content-image {
+        width: 100%;
+    }
+
+    .content-text {
+        font-size: 14px;
+    }
+
+    .whatsapp-btn {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-popup {
+        width: 80%;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    .footer-p {
+        font-size: 12px;
+    }
+
+    .footer h5 {
+        font-size: 16px;
+    }
+    .content-image {
+        width: 100%;
+        height: auto;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .content-image {
+        width: 100%;
+        height: auto;
+    }
+    .navButton1, .navButton2 {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-nav li {
+        margin-bottom: 10px;
+    }
+
+    .quality-h1, .quality-h2, .quality-h3 {
+        font-size: 36px;
+    }
+
+    .quality-p, .quality-p1 {
+        font-size: 16px;
+    }
+
+    .what-we-do .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-image {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .whatsapp-btn {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    .footer-p {
+        font-size: 14px;
+    }
+
+    .footer h5 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+
+
+
+    .navbar-nav li {
+        margin-bottom: 15px;
+    }
+
+    .quality-h1, .quality-h2, .quality-h3 {
+        font-size: 40px;
+    }
+
+    .content-image {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .whatsapp-btn {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 40px;
+    }
+
+    .footer-p {
+        font-size: 14px;
+    }
+
+    .footer h5 {
+        font-size: 18px;
+    }
+}
+
+
+

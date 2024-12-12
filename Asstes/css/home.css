@@ -1,15 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: Open Sans;
+body{
+    font-family: "Open Sans", sans-serif;;
 }
+.container-fluid{
+    --bs-gutter-x: 0;
+}
+/*logo*/
 .logo-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+
+}
+/*header*/
+.phone img{
+    width: 16px;
+}
+.phone a:hover{
+    color: #bbddea !important;
 }
 .z-index{
     z-index: 1000;
@@ -19,13 +31,13 @@ body {
 }
 .navButton1{
     background: #043567;
-    padding: 10px 40px;
+    padding: 1rem 2rem;
     color: #fff;
     transition: 0.3s;
     border: none;
     margin-right: 2rem;
     font-weight: 400;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-size: 16px;
     text-decoration: none;
 }
@@ -36,7 +48,7 @@ body {
 }
 .navButton2{
     background: #043567;
-    padding: 10px 40px;
+    padding: 1rem 2rem;
     color: #fff;
     transition: 0.3s;
     border: none;
@@ -92,6 +104,56 @@ body {
 .about img{
     box-shadow:  3px 10px 10px #2e3440;
 }
+.backgroundColor{
+    background: #ddeef5;
+
+}
+.grouping{
+    padding: 5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.missionHeading{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    color:#18212e;
+    padding-left: 3rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+}
+.cardsImg{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 1rem;
+}
+.cardsImg img{
+    width: 3rem;
+
+}
+.cardsImg h3{
+    font-size: 25px; !important;
+    font-weight: 700; !important;
+    line-height: 25px; !important;
+    color: #043567;
+}
+.cardsImg p{
+    font-size: 16px; !important;
+    font-weight: 500; !important;
+    line-height: 20px; !important;
+    color: #7a7a7a ;
+}
+
 .service-btn{
     background: #043567;
     color: #fff;
@@ -115,12 +177,69 @@ body {
     text-transform: uppercase;
 }
 .service-p{
-    font-family: open Sans;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 30px;
     color: #747b86;
 }
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.animate-left {
+    animation: slideInFromLeft 1s forwards;
+}
+
+.animate-right {
+    animation: slideInFromRight 1s forwards;
+}
+
+
+
+.service-card img{
+    border-radius: 50%;
+    transition: 0.3s;
+    width: 50%;
+    margin-top: 10%
+}
+.service-card{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 2s ease-in-out;
+}
+
+.service-card img:hover{
+    transform: scale(105%);
+    transition: 0.3s;
+
+}
+
+
 .section-header{
     font-family: Roboto;
     font-weight: 700;
@@ -132,22 +251,16 @@ body {
     color: #4181ca
 }
 .section-p{
-    font-family: open Sans;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 30px;
+    color:#747b86;
 }
-.service-card img{
-    transition: 0.3s;
+.cards-body{
+    padding: 5rem 3rem;
+    border-left: 2px solid #043567;
 }
-.service-card{
-    overflow: hidden;
-}
-.service-card img:hover{
-    transform: scale(105%);
-    transition: 0.3s;
 
-}
 .partner{
     font-family: open Sans;
     font-weight: 700;
@@ -185,12 +298,7 @@ body {
 #navUl li a:hover{
     color: #bcdeeb; !important;
 }
-.phone img{
-    width: 16px;
-}
-.phone a:hover{
-    color: #bbddea !important;
-}
+
 .navbar-nav {
     justify-content: center;
     width: 100%;
@@ -325,6 +433,52 @@ body {
     font-size: 11px;
     line-height: 21px;
 }
+
+/*FAQ*/
+.faq-section {
+    background: url("/Asstes/img/faqbg.jpg") no-repeat center
+    center / cover;
+    color: #fff;
+    padding: 4rem 2rem;
+}
+.faq-section .content-box {
+    background-color: rgba(72, 86, 98, 0.5);
+    padding: 2rem;
+    border-radius: 8px;
+}
+.accordion-button{
+    color: #fff;
+    background-color: #0a53be;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: rgb(66, 139, 238);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+.accordion-collapse{
+    background-color: #428BEEFF;
+    color: #fff;
+}
+.faq-head{
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+.faq-head p{
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
 .logo-area {
     display: flex;
     justify-content: center;
@@ -342,7 +496,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .footer {
-    padding: 50px 0;
+    padding: 20px 10px;
 }
 .footer h5 {
     color: #ffffff;
@@ -386,7 +540,8 @@ body {
     color: #bcdeeb !important;
 }
 .footer-bg{
-    background: url("/Asstes/img/footer-background.jpg") no-repeat center center ;
+    background: url("/Asstes/img/footer-background.jpg") repeat center center ;
+    background-size: cover;
 }
 .footer-anc a {
     font-family: "Open Sans" !important;
@@ -439,71 +594,167 @@ body {
     transform: scale(105%);
 
 }
-@media (max-width: 768px) {
-    #heroCarousel .carousel-head {
-        font-size: 2rem;
-        line-height: 2.5rem;
-    }
-
-    #heroCarousel .carousel-p {
-        font-size: 0.875rem;
-    }
-
-    #logoCarousel .carousel-item img {
-        max-width: 120px;
-    }
-    .whatsapp-popup {
-        bottom: 10px;
-        right: 10px;
-        width: 95%;
-    }
-
-    .whatsapp-btn img {
-        width: 40px;
-    }
-    .logo-img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .navbar-nav {
-        text-align: center;
-    }
-}
+/* General Mobile Adjustments */
 @media (max-width: 992px) {
     .carousel-caption {
-        font-size: 14px;
-        padding: 10px;
+        font-size: 0.9rem;
+        padding: 15px;
     }
-    .car-head {
-        font-size: 28px;
-        line-height: 36px;
+    .carousel-caption h1 {
+        font-size: 1.8rem;
     }
-    .car-p {
-        font-size: 14px;
-        line-height: 24px;
+    .carousel-caption p {
+        font-size: 0.8rem;
     }
+
     .navbar-nav {
         flex-direction: column;
+        align-items: center;
     }
-    .logo-img {
-        width: 3rem;
-        height: 3rem;
+
+    .navbar-brand .logo-img {
+        width: 50px;
+        height: 50px;
     }
-    .navbar {
-        padding: 10px;
+
+    .navButton1, .navButton2 {
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .service-card {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+    .service-card img {
+        width: 30%;
+        margin: 0;
+    }
+
+    .service-card .cards-body {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 60vh;
+    }
+
+    .hero-carousel .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-carousel .carousel-caption p {
+        font-size: 0.75rem;
+    }
+
+    .navbar-nav {
+        font-size: 0.85rem;
+    }
+
+    .aboutUs-Header {
+        font-size: 2rem;
+    }
+
+    .aboutUs-Header2 {
+        font-size: 1rem;
+    }
+
+    .aboutUs-p {
+        font-size: 0.8rem;
+    }
+
+    .service-header {
+        font-size: 1.5rem;
+    }
+
+    .gallery-head {
+        font-size: 1.8rem;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .subscribe-h1 {
+        font-size: 1.5rem;
+    }
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .footer .social-icons a {
+        margin-right: 10px;
+        font-size: 1.25rem; /* Slightly smaller icons */
+    }
+
+    .footer .map iframe {
+        width: 100%;
+        height: 250px; /* Adjust the height to fit smaller screens */
+        max-width: 100%;
     }
 }
 
 @media (max-width: 576px) {
-    .carousel-caption h1,
-    .carousel-caption p {
-        font-size: 12px;
+    .carousel-item img {
+        height: 40vh;
     }
-    .card {
-        margin-bottom: 20px;
+
+    .navbar-brand .logo-img {
+        width: 30px;
+        height: 30px;
     }
-    .navbar-brand strong {
+
+    .whatsapp-btn img {
+        width: 30px;
+    }
+
+    .footer-h5 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .footer-p {
         font-size: 14px;
+        line-height: 24px;
+    }
+
+    .footer .social-icons a {
+        font-size: 1rem; /* Smaller icons */
+    }
+
+    .footer .map iframe {
+        height: 200px; /* Further adjust height for small screens */
+    }
+
+    .footer a {
+        font-size: 14px;
+    }
+
+    .gallery-bg img {
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .gallery-head {
+        font-size: 1.5rem;
     }
 }

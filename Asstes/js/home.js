@@ -32,6 +32,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const serviceCards = document.querySelectorAll(".service-card");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.classList.contains('slide-in-left')) {
+                    entry.target.classList.add('animate-left');
+                } else {
+                    entry.target.classList.add('animate-right');
+                }
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    serviceCards.forEach((card, index) => {
+        if (index % 2 === 0) {
+            card.classList.add('slide-in-left');
+        } else {
+            card.classList.add('slide-in-right');
+        }
+        observer.observe(card);
+    });
+});
+
+
+
+
+
+
 $(document).ready(function () {
     $('.logo-area').slick({
         centerMode: true,
@@ -40,7 +71,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        arrows:false,
+        arrows: false,
         responsive: [
             {
                 breakpoint: 768,
