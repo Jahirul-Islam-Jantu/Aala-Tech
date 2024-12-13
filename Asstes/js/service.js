@@ -31,3 +31,50 @@ document.addEventListener("DOMContentLoaded", () => {
         event.stopPropagation();
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const faqSection = document.querySelector(".faq-section");
+    const contentBox = document.querySelector(".faq-section .content-box");
+    const texts = document.querySelectorAll(".faq-section h1, .faq-section p");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    contentBox.classList.add("visible");
+                    texts.forEach((text) => text.classList.add("visible"));
+                }
+            });
+        },
+        { threshold: 0.3 }
+    );
+
+    observer.observe(faqSection);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const serviceCards = document.querySelectorAll(".service-card");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.classList.contains('slide-in-left')) {
+                    entry.target.classList.add('animate-left');
+                } else {
+                    entry.target.classList.add('animate-right');
+                }
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    serviceCards.forEach((card, index) => {
+        if (index % 2 === 0) {
+            card.classList.add('slide-in-left');
+        } else {
+            card.classList.add('slide-in-right');
+        }
+        observer.observe(card);
+    });
+});

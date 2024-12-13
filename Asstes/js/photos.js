@@ -31,3 +31,41 @@ document.addEventListener("DOMContentLoaded", () => {
         event.stopPropagation();
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const faqSection = document.querySelector(".faq-section");
+    const contentBox = document.querySelector(".faq-section .content-box");
+    const texts = document.querySelectorAll(".faq-section h1, .faq-section p");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    contentBox.classList.add("visible");
+                    texts.forEach((text) => text.classList.add("visible"));
+                }
+            });
+        },
+        { threshold: 0.3 }
+    );
+
+    observer.observe(faqSection);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".gallery-item");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.3 } //
+    );
+
+    items.forEach((item) => observer.observe(item));
+});
