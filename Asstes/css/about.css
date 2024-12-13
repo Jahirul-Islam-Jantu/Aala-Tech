@@ -172,6 +172,7 @@ body{
 }
 
 
+
 @media only screen and (max-width: 576px) {
 
     #navUl li {
@@ -186,9 +187,14 @@ body{
         color: #f1f3f5 !important;
     }
 
-    .about-header .background {
-        height: 60vh;
-        background-size: cover;
+    .background {
+        height: 40vh;
+    }
+    .background h1 {
+        font-size: 1.25rem;
+    }
+    .background p {
+        font-size: 1rem;
     }
 
     .quality-h1, .quality-h2, .quality-h3 {
@@ -245,10 +251,7 @@ body{
 
 
 @media only screen and (max-width: 768px) {
-    .container-fluid {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+
     .content-image {
         width: 100%;
         height: auto;
@@ -304,11 +307,21 @@ body{
     .footer h5 {
         font-size: 18px;
     }
+    .background {
+        height: 50vh;
+    }
+    .background h1, .background p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 992px) {
 
-
+    .background {
+        height: 60vh;
+        background-position: center;
+    }
 
 
     .navbar-nav li {

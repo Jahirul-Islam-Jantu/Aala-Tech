@@ -17,10 +17,10 @@ body{
 
 }
 /*header*/
-.phone img{
+.phone img {
     width: 16px;
 }
-.phone a:hover{
+.phone a:hover {
     color: #bbddea !important;
 }
 .z-index{
@@ -29,39 +29,21 @@ body{
     background: rgba(26, 29, 32, 0.65);
     width: 100%;
 }
-.navButton1{
+.navButton1 {
     background: #043567;
     padding: 1rem 2rem;
     color: #fff;
     transition: 0.3s;
     border: none;
-    margin-right: 2rem;
     font-weight: 400;
-    font-family: "Open Sans";
     font-size: 16px;
     text-decoration: none;
+    border-radius: 4px;
 }
-.navButton1:hover{
+.navButton1:hover {
     background: #4181ca;
     transition: 0.3s;
-    box-shadow:  1px 1px 1px #4181ca;
-}
-.navButton2{
-    background: #043567;
-    padding: 1rem 2rem;
-    color: #fff;
-    transition: 0.3s;
-    border: none;
-    margin-right: 2rem;
-    font-weight: 400;
-    font-family: Open Sans;
-    font-size: 16px;
-    text-decoration: none;
-}
-.navButton2:hover{
-    background: #4181ca;
-    transition: 0.3s;
-    box-shadow: 1px 1px 1px 1px #4181ca;
+    box-shadow: 1px 1px 1px #4181ca;
 }
 .aboutUs-Header{
     font-family: Roboto;
@@ -269,23 +251,7 @@ body{
     color: #18212e;
     text-transform: uppercase;
 }
-.slider-btn{
-    background: transparent;
-    padding: 10px 20px;
-    border: 1px solid #cbd2dc;
-    color: #fff;
-    box-shadow:  1px 1px 1px #cbd2dc;
-    transition: 0.3s;
-    font-family: Open Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    text-decoration: none;
-}
-.slider-btn:hover{
-    background: #4181ca;
-    transition: 0.3s;
-}
+
 #navUl li a{
     margin-right: 20px;
     font-family: Roboto;
@@ -324,6 +290,8 @@ body{
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 5px;
+    max-width: 70%;
+    margin: auto;
 }
 #heroCarousel .carousel-item img {
     height: 80vh;
@@ -334,7 +302,7 @@ body{
     font-size: 50px;
     line-height: 60px;
     color: #ffffff;
-
+    text-align: center;
 }
 #heroCarousel .carousel-p {
     font-family: Roboto;
@@ -343,6 +311,24 @@ body{
     line-height: 30px;
     color: #d1ebf6;
     font-style: italic;
+    text-align: center;
+}
+.slider-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+    background-color: #428bee;
 }
 .gallery-bg {
     background: #1a1d20 no-repeat center;
@@ -390,6 +376,28 @@ body{
     line-height: 22px;
     color: #747b86;
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gallery-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.gallery-item.visible {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
 .whatsapp-btn {
     position: fixed;
     bottom: 20px;
@@ -436,15 +444,32 @@ body{
 
 /*FAQ*/
 .faq-section {
-    background: url("/Asstes/img/faqbg.jpg") no-repeat center
-    center / cover;
+    background: url("/Asstes/img/faqbg.jpg") no-repeat center center / cover;
     color: #fff;
     padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
 }
 .faq-section .content-box {
     background-color: rgba(72, 86, 98, 0.5);
     padding: 2rem;
     border-radius: 8px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: transform 1s ease, opacity 1s ease;
+}
+.faq-section .content-box.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.faq-section h1, .faq-section p {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: transform 1s ease, opacity 1s ease;
+}
+.faq-section h1.visible, .faq-section p.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 .accordion-button{
     color: #fff;
@@ -618,15 +643,23 @@ body{
     }
 }
 @media (max-width: 992px) {
+    #heroCarousel .carousel-item img {
+        height: 60vh;
+    }
     .carousel-caption {
-        font-size: 0.9rem;
-        padding: 15px;
+        max-width: 90%;
     }
-    .carousel-caption h1 {
-        font-size: 1.8rem;
+    #heroCarousel .carousel-head {
+        font-size: 40px;
+        line-height: 50px;
     }
-    .carousel-caption p {
-        font-size: 0.8rem;
+    #heroCarousel .carousel-p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .slider-btn {
+        padding: 8px 16px;
+        font-size: 12px;
     }
 
     .navbar-nav {
@@ -635,8 +668,8 @@ body{
     }
 
     .navbar-brand .logo-img {
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
     }
 
     .navButton1, .navButton2 {
@@ -667,8 +700,8 @@ body{
         padding: 1rem;
     }
     .navbar-brand .logo-img {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
     }
     .gallery-head {
         font-size: 36px;
@@ -681,16 +714,35 @@ body{
 }
 
 @media (max-width: 768px) {
-    .carousel-item img {
-        height: 50vh;
+    #heroCarousel .carousel-item img {
+        height: 50vh; /* Smaller height for mobile screens */
+    }
+    #heroCarousel .carousel-head {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    #heroCarousel .carousel-p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .slider-btn {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
+    .phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
     }
 
-    .hero-carousel .carousel-caption h1 {
-        font-size: 1rem;
+    .phone a {
+        font-size: 14px;
+        text-align: center;
     }
 
-    .hero-carousel .carousel-caption p {
-        font-size: 0.5rem;
+    .phone img {
+        width: 14px;
     }
 
     .navbar-nav {
@@ -757,14 +809,37 @@ body{
         max-width: 100%;
     }
     .navbar-brand .logo-img {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
+    }
+    .res {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navButton1 {
+        width: 100%; /* Full width for smaller screens */
+        text-align: center;
+        padding: 0.8rem 1.5rem; /* Adjusted padding for smaller screens */
+        margin-bottom: 0.5rem; /* Added spacing between buttons */
     }
 }
 
 @media (max-width: 576px) {
-    .carousel-item img {
-        height: 40vh;
+    #heroCarousel .carousel-item img {
+        height: 40vh; /* Further reduced height for very small screens */
+    }
+    #heroCarousel .carousel-head {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    #heroCarousel .carousel-p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .slider-btn {
+        padding: 5px 10px;
+        font-size: 9px;
     }
 
     .navbar-brand .logo-img {
@@ -787,11 +862,11 @@ body{
     }
 
     .footer .social-icons a {
-        font-size: 1rem; /* Smaller icons */
+        font-size: 1rem;
     }
 
     .footer .map iframe {
-        height: 200px; /* Further adjust height for small screens */
+        height: 200px;
     }
 
     .footer a {

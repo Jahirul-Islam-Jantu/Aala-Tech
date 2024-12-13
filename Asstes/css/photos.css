@@ -244,9 +244,7 @@ body{
 }
 
 @media (max-width: 576px) {
-    .navbar {
-        padding: 10px;
-    }
+
 
     .navbar-brand img {
         height: 40px;
