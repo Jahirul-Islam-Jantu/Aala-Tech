@@ -344,46 +344,46 @@ body{
     color: #d1ebf6;
     font-style: italic;
 }
-.gallery-bg{
+.gallery-bg {
     background: #1a1d20 no-repeat center;
     transition: 0.3s;
 }
-.gallery-bg:hover{
+.gallery-bg:hover {
     box-shadow: -1px 2px 10px #428bee;
     transition: 0.3s;
 }
-.gallery-bg img{
+.gallery-bg img {
     border-radius: 5px;
     transition: 0.3s;
 }
-.gallery-bg img:hover{
+.gallery-bg img:hover {
     transform: scale(105%);
     box-shadow: -1px 2px 10px #428bee;
     transition: 0.3s;
     border-radius: 5px;
 }
-.gallery-head{
+.gallery-head {
     font-family: Roboto;
     font-weight: 700;
     font-size: 50px;
     line-height: 60px;
     color: #000000;
 }
-.galary-title{
+.galary-title {
     font-family: "Open Sans";
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
     color: #ffffff;
 }
-.galary-p{
+.galary-p {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     color: #bcdeeb;
 }
-.photos-p{
+.photos-p {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 18px;
@@ -461,10 +461,20 @@ body{
     font-size: 18px;
     line-height: 24px;
 }
-.accordion-collapse{
-    background-color: #428BEEFF;
-    color: #fff;
+.accordion-collapse {
+    background-color: transparent !important;
+    color: rgb(90, 120, 182);
 }
+.accordion-collapse.show {
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.accordion-body {
+    background: rgba(4, 53, 103, 0.45) !important;
+    color: #ffffff !important;
+    border: 1px solid #043567
+}
+
 .faq-head{
     font-family: "Open Sans";
     font-weight: 700;
@@ -595,6 +605,18 @@ body{
 
 }
 /* General Mobile Adjustments */
+@media (max-width: 1200px) {
+    .gallery-head {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .galary-title {
+        font-size: 16px;
+    }
+    .galary-p {
+        font-size: 12px;
+    }
+}
 @media (max-width: 992px) {
     .carousel-caption {
         font-size: 0.9rem;
@@ -644,23 +666,35 @@ body{
     .service-card .cards-body {
         padding: 1rem;
     }
+    .navbar-brand .logo-img {
+        width: 90px;
+        height: 90px;
+    }
+    .gallery-head {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .col-3 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
 }
 
 @media (max-width: 768px) {
     .carousel-item img {
-        height: 60vh;
+        height: 50vh;
     }
 
     .hero-carousel .carousel-caption h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .hero-carousel .carousel-caption p {
-        font-size: 0.75rem;
+        font-size: 0.5rem;
     }
 
     .navbar-nav {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
 
     .aboutUs-Header {
@@ -680,7 +714,18 @@ body{
     }
 
     .gallery-head {
-        font-size: 1.8rem;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .galary-title {
+        font-size: 14px;
+    }
+    .galary-p {
+        font-size: 11px;
     }
 
     .subscribe {
@@ -711,6 +756,10 @@ body{
         height: 250px; /* Adjust the height to fit smaller screens */
         max-width: 100%;
     }
+    .navbar-brand .logo-img {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -719,8 +768,8 @@ body{
     }
 
     .navbar-brand .logo-img {
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
     }
 
     .whatsapp-btn img {
@@ -749,12 +798,23 @@ body{
         font-size: 14px;
     }
 
-    .gallery-bg img {
-        height: 100px;
-        object-fit: cover;
-    }
-
     .gallery-head {
-        font-size: 1.5rem;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .galary-title {
+        font-size: 14px;
+        text-align: center;
+    }
+    .galary-p {
+        font-size: 10px;
+        text-align: center;
+    }
+    .gallery-bg {
+        margin: 0 auto;
     }
 }
