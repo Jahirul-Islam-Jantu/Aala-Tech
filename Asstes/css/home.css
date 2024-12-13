@@ -7,23 +7,20 @@
 body{
     font-family: "Open Sans", sans-serif;;
 }
-.container-fluid{
+.container-fluid {
     --bs-gutter-x: 0;
 }
-/*logo*/
 .logo-img {
     width: 20%;
     height: 20%;
-
 }
-/*header*/
 .phone img {
     width: 16px;
 }
 .phone a:hover {
     color: #bbddea !important;
 }
-.z-index{
+.z-index {
     z-index: 1000;
     position: relative;
     background: rgba(26, 29, 32, 0.65);
@@ -44,6 +41,82 @@ body{
     background: #4181ca;
     transition: 0.3s;
     box-shadow: 1px 1px 1px #4181ca;
+}
+#navUl li a {
+    margin-right: 20px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    font-style: italic;
+    color: #f1f3f5 !important;
+}
+#navUl li a:hover {
+    color: #bcdeeb !important;
+}
+.navbar-nav {
+    justify-content: center;
+    width: 100%;
+}
+.nav-link {
+    text-align: center;
+}
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+.bg {
+    background-size: cover;
+    background: #1a1d20 no-repeat center;
+}
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    opacity: 90%;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 70%;
+    margin: auto;
+}
+#heroCarousel .carousel-item img {
+    height: 80vh;
+}
+#heroCarousel .carousel-head {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    text-align: center;
+}
+#heroCarousel .carousel-p {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #d1ebf6;
+    font-style: italic;
+    text-align: center;
+}
+.slider-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.slider-btn:hover {
+    background-color: #428bee;
 }
 .aboutUs-Header{
     font-family: Roboto;
@@ -252,84 +325,7 @@ body{
     text-transform: uppercase;
 }
 
-#navUl li a{
-    margin-right: 20px;
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-    font-style:italic;
-    color: #f1f3f5; !important;
-}
-#navUl li a:hover{
-    color: #bcdeeb; !important;
-}
 
-.navbar-nav {
-    justify-content: center;
-    width: 100%;
-}
-.nav-link {
-    text-align: center;
-}
-.navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.2);
-    border: none;
-}
-.bg{
-    background-size: cover;
-    background: #1a1d20 no-repeat center;
-}
-.carousel-item img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    opacity: 90%;
-}
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 70%;
-    margin: auto;
-}
-#heroCarousel .carousel-item img {
-    height: 80vh;
-}
-#heroCarousel .carousel-head {
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 60px;
-    color: #ffffff;
-    text-align: center;
-}
-#heroCarousel .carousel-p {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    color: #d1ebf6;
-    font-style: italic;
-    text-align: center;
-}
-.slider-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #0056b3;
-    border: none;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.slider-btn:hover {
-    background-color: #428bee;
-}
 .gallery-bg {
     background: #1a1d20 no-repeat center;
     transition: 0.3s;
@@ -714,39 +710,39 @@ body{
 }
 
 @media (max-width: 768px) {
-    #heroCarousel .carousel-item img {
-        height: 50vh; /* Smaller height for mobile screens */
-    }
-    #heroCarousel .carousel-head {
-        font-size: 32px;
-        line-height: 40px;
-    }
-    #heroCarousel .carousel-p {
-        font-size: 12px;
-        line-height: 20px;
-    }
-    .slider-btn {
-        padding: 6px 12px;
-        font-size: 10px;
-    }
-    .phone {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
+    .logo-img {
+        width: 50%;
+        height: auto;
     }
 
-    .phone a {
-        font-size: 14px;
+    .phone {
+        flex-direction: column;
         text-align: center;
     }
 
-    .phone img {
-        width: 14px;
+    .phone a {
+        display: block;
+        margin-bottom: 5px;
     }
 
-    .navbar-nav {
-        font-size: 0.75rem;
+    .navButton1 {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+    }
+
+    #heroCarousel .carousel-head {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #heroCarousel .carousel-p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #heroCarousel .carousel-caption {
+        padding: 10px;
+        max-width: 90%;
     }
 
     .aboutUs-Header {
@@ -817,34 +813,27 @@ body{
         align-items: center;
     }
 
-    .navButton1 {
-        width: 100%; /* Full width for smaller screens */
-        text-align: center;
-        padding: 0.8rem 1.5rem; /* Adjusted padding for smaller screens */
-        margin-bottom: 0.5rem; /* Added spacing between buttons */
-    }
+
 }
 
 @media (max-width: 576px) {
-    #heroCarousel .carousel-item img {
-        height: 40vh; /* Further reduced height for very small screens */
-    }
-    #heroCarousel .carousel-head {
-        font-size: 28px;
-        line-height: 35px;
-    }
-    #heroCarousel .carousel-p {
-        font-size: 10px;
-        line-height: 18px;
-    }
-    .slider-btn {
-        padding: 5px 10px;
-        font-size: 9px;
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .navbar-brand .logo-img {
-        width: 50px;
-        height: 50px;
+    #navUl li a {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+
+    .slider-btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    #heroCarousel .carousel-item img {
+        height: 50vh;
     }
 
     .whatsapp-btn img {
