@@ -20,7 +20,7 @@ body{
     color: #bcdeeb; !important;
 }
 .background {
-    background: url('/Asstes/img/aboutus.jpg') no-repeat center center ;
+    background: url('/Asstes/img/s2.png') no-repeat center center ;
     background-size: cover;
     height: 80vh;
     display: flex;
