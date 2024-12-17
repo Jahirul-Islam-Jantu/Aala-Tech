@@ -15,12 +15,12 @@ body{
 }
 
 .navbar-toggler {
-    margin-left: auto; /* Push to the right in larger screens */
+    margin-left: 10px;
     border: 1px solid #fff;
     outline: none;
 }
 
-#navUl li a{
+#navbarNav li a{
     margin-right: 20px;
     font-family: Roboto;
     font-weight: 400;
@@ -29,7 +29,7 @@ body{
     font-style:italic;
     color: #f1f3f5; !important;
 }
-#navUl li a:hover{
+#navbarNav li a:hover{
     color: #bcdeeb; !important;
 }
 .mBottom{
@@ -107,7 +107,7 @@ body{
 @media (max-width: 992px) {
 
 
-    #navUl li a {
+    #navbarNav li a {
         margin-right: 0;
         margin-bottom: 10px;
         font-size: 16px;
@@ -157,12 +157,12 @@ body{
 @media (max-width: 768px) {
 
 
-    .phone, .navButton1, .navButton2 {
+    .phone, .navButton1  {
         display: block;
         margin: 10px auto;
     }
 
-    .phone, .navButton1, .navButton2 {
+    .phone, .navButton1  {
         font-size: 12px;
         margin: 0 5px;
     }

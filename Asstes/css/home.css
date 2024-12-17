@@ -11,12 +11,25 @@ body{
     --bs-gutter-x: 0;
 }
 .logo-img {
-    width: 120px;
-    height: 150px;
+    width: 100px;
+    height: auto;
 
 }
+
+
+
+.borderLine{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 .phone img {
     width: 16px;
+    margin-right: 5px;
 }
 .phone a:hover {
     color: #bbddea !important;
@@ -29,12 +42,12 @@ body{
 }
 .navButton1 {
     background: #043567;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 14px;
     color: #fff;
     transition: 0.3s;
     border: none;
     font-weight: 400;
-    font-size: 16px;
     text-decoration: none;
     border-radius: 4px;
 }
@@ -43,7 +56,7 @@ body{
     transition: 0.3s;
     box-shadow: 1px 1px 1px #4181ca;
 }
-#navUl li a {
+#navbarNav li a {
     margin-right: 20px;
     font-family: Roboto;
     font-weight: 400;
@@ -52,12 +65,14 @@ body{
     font-style: italic;
     color: #f1f3f5 !important;
 }
-#navUl li a:hover {
+#navbarNav li a:hover {
     color: #bcdeeb !important;
 }
+
 .navbar-nav {
     justify-content: center;
     width: 100%;
+    margin: 0 auto;
 }
 .nav-link {
     text-align: center;
@@ -65,6 +80,15 @@ body{
 .navbar-toggler {
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
+    margin-left: 10px;
+}
+
+.phone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    transition: height 0.3s ease-in-out;
 }
 .bg {
     background-size: cover;
@@ -640,9 +664,11 @@ body{
     }
 }
 @media (max-width: 992px) {
+
     #heroCarousel .carousel-item img {
         height: 60vh;
     }
+
     .carousel-caption {
         max-width: 90%;
     }
@@ -658,20 +684,27 @@ body{
         padding: 8px 16px;
         font-size: 12px;
     }
+    .responsive {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
 
     .navbar-nav {
+        margin: 0;
         flex-direction: column;
-        align-items: center;
     }
 
-    .navbar-brand .logo-img {
-        width: 70px;
-        height: 70px;
+    .navbar-brand img {
+        width: 80px;
+        height: auto;
     }
 
-    .navButton1, .navButton2 {
+    .navButton1 {
         padding: 0.5rem 1rem;
         font-size: 14px;
+    }
+    .collapse:not(.show) {
+        display: none !important;
     }
 
     .about img {
@@ -708,12 +741,35 @@ body{
         flex: 0 0 33.3333%;
         max-width: 33.3333%;
     }
+    .phone{
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .nav-item{
+        margin-bottom: 0.5rem;
+    }
+
+    #navbarNav .nav-link {
+        font-size: 14px;
+    }
+
 }
 
 @media (max-width: 768px) {
     .logo-img {
         width: 50%;
         height: auto;
+    }
+    .collapse:not(.show) {
+        display: none !important;
+    }
+    .borderLine{
+        border-bottom: 1px solid white;
+        margin-bottom: 1rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .phone {
@@ -812,6 +868,7 @@ body{
     .res {
         flex-direction: column;
         align-items: center;
+
     }
 
 
@@ -823,14 +880,21 @@ body{
         text-align: center;
     }
 
-    #navUl li a {
+
+    #navbarNav li a {
         margin: 10px 0;
         font-size: 12px;
+    }
+    .borderLine{
+        border-bottom: 1px solid white;
+        margin-bottom: 0.8rem;
+        align-items: center;
     }
 
     .slider-btn {
         font-size: 12px;
         padding: 8px 15px;
+        margin-bottom: 0.5rem;
     }
 
     #heroCarousel .carousel-item img {
@@ -882,4 +946,6 @@ body{
     .gallery-bg {
         margin: 0 auto;
     }
+
+
 }
