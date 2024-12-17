@@ -111,7 +111,7 @@ body{
     font-weight: 400 !important;
     font-size: 16px !important;
     line-height: 30px !important;
-    color: #5f6267 !important;
+    color: #5a97f3 !important;
     transition: all .2s ease-in-out;
     display: inline-block;
 }
@@ -126,8 +126,8 @@ body{
 
 
 
-.footer-anc a:hover {
-    color: #e1f0fa !important;
+.footer-anc1 a:hover {
+    color: #6392bd !important;
     transform: scale(102%);
 }
 @media (max-width: 768px) {
