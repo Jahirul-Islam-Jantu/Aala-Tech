@@ -10,10 +10,14 @@ body{
 .container-fluid {
     --bs-gutter-x: 0;
 }
-.logo-img {
+.navbar-brand1 .logo-img {
     width: 100px;
     height: auto;
-
+}
+.navbar-brand .logo-img {
+    display: none;
+    width: 100px;
+    height: auto;
 }
 
 
@@ -21,7 +25,7 @@ body{
 .borderLine{
     margin-bottom: 1.5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
@@ -665,6 +669,46 @@ body{
 }
 @media (max-width: 992px) {
 
+
+    .borderLine{
+        border-bottom: 1px solid white;
+        margin-bottom: 1rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .phone {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .phone a {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .navButton1 {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+    }
+
+    #heroCarousel .carousel-head {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #heroCarousel .carousel-p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #heroCarousel .carousel-caption {
+        padding: 10px;
+        max-width: 90%;
+    }
+
     #heroCarousel .carousel-item img {
         height: 60vh;
     }
@@ -694,18 +738,36 @@ body{
         flex-direction: column;
     }
 
-    .navbar-brand img {
+
+    .navbar-brand .logo-img {
         width: 80px;
         height: auto;
+        display: block;
     }
 
     .navButton1 {
         padding: 0.5rem 1rem;
         font-size: 14px;
     }
+    .phone{
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .nav-item{
+        margin-bottom: 0.5rem;
+    }
+
+    #navbarNav .nav-link {
+        font-size: 14px;
+    }
     .collapse:not(.show) {
         display: none !important;
     }
+    .navbar-brand1 .logo-img {
+        display: none;
+    }
+
+
 
     .about img {
         width: 100%;
@@ -729,10 +791,7 @@ body{
     .service-card .cards-body {
         padding: 1rem;
     }
-    .navbar-brand .logo-img {
-        width: 100px;
-        height: 100px;
-    }
+
     .gallery-head {
         font-size: 36px;
         line-height: 44px;
@@ -741,17 +800,7 @@ body{
         flex: 0 0 33.3333%;
         max-width: 33.3333%;
     }
-    .phone{
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-    .nav-item{
-        margin-bottom: 0.5rem;
-    }
 
-    #navbarNav .nav-link {
-        font-size: 14px;
-    }
 
 }
 
@@ -861,9 +910,13 @@ body{
         height: 250px; /* Adjust the height to fit smaller screens */
         max-width: 100%;
     }
+    .navbar-brand1 .logo-img {
+        display: none;
+    }
     .navbar-brand .logo-img {
         width: 60px;
         height: 60px;
+        display: block;
     }
     .res {
         flex-direction: column;

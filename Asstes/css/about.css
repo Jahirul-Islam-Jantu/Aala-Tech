@@ -7,7 +7,7 @@
 body{
     font-family: "Open Sans", sans-serif;;
 }
-#navUl li a{
+#navbarNav li a{
     margin-right: 20px;
     font-family: Roboto;
     font-weight: 400;
@@ -16,7 +16,7 @@ body{
     font-style:italic;
     color: #f1f3f5; !important;
 }
-#navUl li a:hover{
+#navbarNav li a:hover{
     color: #bcdeeb; !important;
 }
 .background {
@@ -175,12 +175,12 @@ body{
 
 @media only screen and (max-width: 576px) {
 
-    #navUl li {
+    #navbarNav li {
         text-align: center;
         width: 100%;
     }
 
-    #navUl li a {
+    #navbarNav li a {
         font-size: 16px;
         padding: 10px;
         display: block;

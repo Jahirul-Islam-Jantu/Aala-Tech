@@ -8,7 +8,7 @@ body{
     font-family: "Open Sans", sans-serif;;
 }
 
-#navUl li a{
+#navbarNav li a{
     margin-right: 20px;
     font-family: Roboto;
     font-weight: 400;
@@ -17,7 +17,7 @@ body{
     font-style:italic;
     color: #f1f3f5; !important;
 }
-#navUl li a:hover{
+#navbarNav li a:hover{
     color: #bcdeeb; !important;
 }
 .background {
