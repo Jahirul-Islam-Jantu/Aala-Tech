@@ -14,6 +14,7 @@ body{
 
 }
 
+
 .navbar-toggler {
     margin-left: 10px;
     border: 1px solid #fff;
@@ -84,12 +85,19 @@ body{
     line-height: 24px;
 
 }
+.gallery-p{
+    color: #7d8796;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+}
 .font-p{
     color: #d9ebc6;
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
 }
+
 .text-color{
     color:#a5abb7;
     font-weight: 500;

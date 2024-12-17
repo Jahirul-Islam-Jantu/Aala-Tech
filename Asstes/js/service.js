@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const serviceCards = document.querySelectorAll(".service-card");
-
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -67,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.2 });
+    }, {threshold: 0.2});
 
     serviceCards.forEach((card, index) => {
         if (index % 2 === 0) {
@@ -76,5 +75,21 @@ document.addEventListener("DOMContentLoaded", function () {
             card.classList.add('slide-in-right');
         }
         observer.observe(card);
+    });
+})
+
+    // Toggle "see more" functionality
+document.querySelectorAll('.see-more-btn').forEach(button => {
+    button.addEventListener('click', (event) => {
+        const cardBody = event.target.closest('.card-body');
+        const shortText = cardBody.querySelector('.short-text');
+        const fullText = cardBody.querySelector('.full-text');
+
+        // Toggle visibility of both short and full text
+        fullText.classList.toggle('display-none');
+        shortText.classList.toggle('display-none');
+
+        // Update button text based on visibility of full-text
+        event.target.textContent = fullText.classList.contains('display-none') ? 'See More' : 'See Less';
     });
 });
